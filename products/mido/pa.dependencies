@@ -1,20 +1,20 @@
 [
     {
         "remote":       "aospa",
-        "repository":   "AOSPA/android_device_xiaomi_mido",
+        "repository":   "msm8953-dev/android_device_xiaomi_mido",
         "target_path":  "device/xiaomi/mido",
         "revision":     "quartz"
     },
     {
-        "remote":       "blobs",
-        "repository":   "proprietary_vendor_xiaomi",
+        "remote":       "aospa",
+        "repository":   "msm8953-dev/proprietary_vendor_xiaomi",
         "target_path":  "vendor/xiaomi",
         "revision":     "quartz"
     },
     {
         "remote":       "aospa",
-        "repository":   "AOSPA/android_kernel_xiaomi_mido",
-        "target_path":  "kernel/xiaomi/mido",
+        "repository":   "msm8953-dev/android_kernel_xiaomi_msm8953-common",
+        "target_path":  "kernel/xiaomi/msm8953-common",
         "revision":     "quartz"
     },
     {
