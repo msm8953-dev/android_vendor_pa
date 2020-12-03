@@ -3,13 +3,13 @@
         "remote":       "aospa",
         "repository":   "msm8953-dev/device_xiaomi_mido",
         "target_path":  "device/xiaomi/mido",
-        "revision":     "ruby"
+        "revision":     "qcril"
     },
     {
         "remote":       "aospa",
         "repository":   "msm8953-dev/proprietary_vendor_xiaomi",
         "target_path":  "vendor/xiaomi",
-        "revision":     "ruby"
+        "revision":     "qcril"
     },
     {
         "remote":       "aospa",
