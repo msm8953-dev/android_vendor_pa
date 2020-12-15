@@ -12,32 +12,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Check for target product
-ifeq (pa_X01BD,$(TARGET_PRODUCT))
+ifeq (pa_oneplus8t,$(TARGET_PRODUCT))
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Include Paranoid Android common configuration
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit from the custom device configuration.
+$(call inherit-product, device/oneplus/oneplus8t/device.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/asus/X01BD/device.mk)
-
-# Inherit common PA configuration
+# Inherit from the AOSPA configuration.
 $(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
-# Override AOSP build properties
-PRODUCT_NAME := pa_X01BD
-PRODUCT_DEVICE := X01BD
-PRODUCT_BRAND := Asus
-PRODUCT_MODEL := Zenfone Max Pro M2
-PRODUCT_MANUFACTURER := Asus
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_GMS_CLIENTID_BASE := android-asus
+PRODUCT_BRAND := OnePlus
+PRODUCT_DEVICE := oneplus8t
+PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_MODEL := OnePlus 8T
+PRODUCT_NAME := pa_oneplus8t
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="sdm660_64-user 9 PKQ1 1634 release-keys"
+PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 endif
