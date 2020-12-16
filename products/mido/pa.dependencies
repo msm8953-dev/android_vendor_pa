@@ -7,9 +7,9 @@
     },
     {
         "remote":       "aospa",
-        "repository":   "msm8953-dev/proprietary_vendor_xiaomi",
+        "repository":   "zeelog/proprietary_vendor_xiaomi",
         "target_path":  "vendor/xiaomi",
-        "revision":     "ruby"
+        "revision":     "lineage-18.1"
     },
     {
         "remote":       "aospa",
