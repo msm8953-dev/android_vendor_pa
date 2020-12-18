@@ -42,6 +42,23 @@ soong_config_module_type {
     properties: ["whole_static_libs"],
 }
 
+soong_config_module_type {
+    name: "camera_parameter_library",
+    module_type: "cc_defaults",
+    config_namespace: "aospaGlobalVars",
+    value_variables: ["uses_camera_parameter_lib"],
+    properties: ["whole_static_libs"],
+}
+
+camera_parameter_library {
+    name: "camera_parameter_library_defaults",
+    soong_config_variables: {
+        uses_camera_parameter_lib: {
+            whole_static_libs: ["%s"],
+        },
+    },
+}
+
 vendor_init {
     name: "vendor_init_defaults",
     soong_config_variables: {
